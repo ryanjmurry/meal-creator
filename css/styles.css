@@ -10,4 +10,7 @@ body {
   background-color: white;
   color: red;
   margin: 10px;
+  
+#results {
+  display: none;
 }
