@@ -35,4 +35,4 @@ _jQuery, Bootstrap, javascript and css_
 
 *MIT*
 
-Copyright (c) 2018 **_Michael Fritz_**
+Copyright (c) 2018 **_Food-EZ_**
