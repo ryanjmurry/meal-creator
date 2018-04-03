@@ -1,0 +1,13 @@
+.jumbotron {
+  margin-bottom: 40px;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+
+body {
+  background-color: white;
+  color: red;
+  margin: 10px;
+}
