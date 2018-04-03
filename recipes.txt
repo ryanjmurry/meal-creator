@@ -29,11 +29,6 @@ No
 
 ~ ~ ~ R E C I P E S ~ ~ ~
 
-AVOCADO RANCH BURITO
-ingredients:
-base - Tortilla
-meat - chicken, tofu
-veggie - avocado
 
 TERIYAKI RICE BOWL
 ingredients:
@@ -41,14 +36,38 @@ base - Rice
 meat - chicken, beef, tofu, pork
 veggie - broccoli
 
+SUSHI
+ingredients:
+base - Rice
+meat - fish, tofu
+veggie - avocado
+
+
 SPAGHETTI (AND MEATBALLS)
 ingredients:
 base - pasta, zoodles
 meat - beef,
 veggie - tomatoes
 
+RAMEN
+ingredients:
+base - pasta
+meat - pork, tofu, chicken, beef
+
 BURGER
 ingredients:
 base - bread
 meat - fish, tofu, beef, chicken, pork
 veggie - lettuce, onions
+cheese - optional
+
+QUESADILLA/GRILLED CHEESE
+ingredients:
+base - tortilla or bread
+cheese - yes
+
+AVOCADO RANCH BURITO
+ingredients:
+base - Tortilla
+meat - chicken, tofu
+veggie - avocado
