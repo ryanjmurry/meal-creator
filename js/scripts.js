@@ -26,11 +26,40 @@ Meal.prototype.Creator = function() {
 }
 //UI Logic
 $(document).ready(function() {
+  $("#next1").click(function() {
+    event.preventDefault();
+    $("#base-options").hide();
+    $("#protein-options").show();
+  });
+
+  $("#next2").click(function() {
+    event.preventDefault();
+    $("#protein-options").hide();
+    $("#veggie-options").show();
+  });
+
+  $("#next3").click(function() {
+    event.preventDefault();
+    $("#veggie-options").hide();
+    $("#dairy-options").show();
+  });
+
+
   $("form#meal-options").submit(function() {
     event.preventDefault();
+    $("#diary-options").hide();
     var userBase = $("#base").val();
     var userProtein = [];
     var userVeggie = [];
     var userDairy = [];
+    $("input:checkbox[name=protein]:checked").each(function() {
+      userProtein.push($(this).val());
+    });
+    $("input:checkbox[name=veggie]:checked").each(function() {
+      userVeggie.push($(this).val());
+    });
+    $("input:checkbox[name=dairy]:checked").each(function() {
+      userDairy.push($(this).val());
+    });
   });
 });
