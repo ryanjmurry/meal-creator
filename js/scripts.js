@@ -44,7 +44,6 @@ $(document).ready(function() {
     $("#dairy-options").show();
   });
 
-
   $("form#meal-options").submit(function() {
     event.preventDefault();
     $("#diary-options").hide();
