@@ -33,6 +33,7 @@ $(document).ready(function() {
   $("#next1").submit(function() {
     event.preventDefault();
     var userBase = $("#base").val();
+    $("#user-base").text(userBase); // to push into sidebar
     $("#base-options").hide();
     $("#protein-options").show();
   });
@@ -42,6 +43,7 @@ $(document).ready(function() {
     $("input:checkbox[name=protein]:checked").each(function() {
       userProtein.push($(this).val());
     });
+    $("#user-protein").text(userProtein); // to push into sidebar
     $("#protein-options").hide();
     $("#veggie-options").show();
   });
@@ -51,16 +53,18 @@ $(document).ready(function() {
     $("input:checkbox[name=veggie]:checked").each(function() {
       userVeggie.push($(this).val());
     });
+    $("#user-veggie").text(userVeggie); // to push into sidebar
     $("#veggie-options").hide();
     $("#dairy-options").show();
   });
 
   $("form#meal-options").submit(function() {
     event.preventDefault();
-    $("#diary-options").hide();
     $("input:checkbox[name=dairy]:checked").each(function() {
       userDairy.push($(this).val());
     });
+    $("#user-dairy").text(userDairy);
+    $("#diary-options").hide();
 
     var userMeal = new Meal (userBase, userProtein, userVeggie, userDairy);
     var recipe = userMeal.Recipe();
