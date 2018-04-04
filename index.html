@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Slackey|Delius+Unicase|" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type"text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -12,97 +13,119 @@
 <body>
 
   <div class="jumbotron">
-    <h1>Food-Eaze</h1>
+    <h1>F o o d - E a z e</h1>
     <h2>A Handy Meal Suggestion Tool for You</h2>
   </div>
 
-  <h2><p>Food-Eaze will help you plan your meals using ingredients that you have on hand. You select a base and other ingredients and Food-Eaze will suggest a yummy meal for you. Give it a try!</p></h2>
+  <h3>
+    <img src="https://i.giphy.com/media/8MObiTsZrFlTi/giphy.webp" class="center"><img src="https://i.giphy.com/media/5e1NHd6Mz4pguyoB1x/giphy.webp"></br></br>
+    <p>Food-Eaze will help you plan your meals using ingredients that you have on hand. Select a base and other ingredients, and Food-Eaze will suggest a yummy meal for you. Give it a try!</p></h3>
 
   <br>
 
   <form class="order-form">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Choose your Base</h2>
-        <select class="form-control" id="meal-base">
-          <div class="radio">
-            <option type="radio" name="rice" value="rice">Rice</option>
+        <div id="next1">
+          <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp">
+          <h4>Choose your Base</h4>
+            <select name="base-options" id="base-options">
+              <option value="rice">Rice</option>
+              <option value="pasta">Pasta or Noodles</option>
+              <option value="bread">Bread</option>
+              <option value="tortilla">Tortilla</option>
+              <option value="zoodles">Zoodles</option>
+            </div>
+          </select></br>
+          <button type="submit" name="button-base">Submit your base!</button>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!--Protein-->
+      <div id="next2">
+        <div class="form-group" id="user-protein">
+          <h4>
+            <img src="https://i.giphy.com/media/fukS8yBmpvGGk/giphy.webp">
+            <p>Choose your Proteins</p></h4>
+          <input type="checkbox" name="protein" value="chicken"> Chicken<br>
+          <input type="checkbox" name="protein" value="beef"> Beef<br>
+          <input type="checkbox" name="protein" value="fish"> Fish<br>            <input type="checkbox" name="protein" value="pork"> Pork<br>
+          <input type="checkbox" name="protein" value="tofu"> Tofu<br>
+          <button type="submit" name="button-protein">Submit your protein!</button>
           </div>
-          <div class="radio">
-            <option type="radio" name="pasta" value="pasta">Pasta or Noodles</option>
+        </div>
+      </div>
+
+      <!--Veggies-->
+        <div id="next3">
+          <h4>
+            <img src="https://i.giphy.com/media/hKyroc5P7axuU/giphy.webp">
+            <p>Choose Veggies or Beans</p></h4>
+            <input type="checkbox" name="veggie" value="greens"> Greens<br>
+            <input type="checkbox" name="veggie" value="carrots"> Carrots<br>
+            <input type="checkbox" name="veggie" value="onions"> Onions<br>
+            <input type="checkbox" name="veggie" value="brocolli"> Brocolli<br>
+            <input type="checkbox" name="veggie" value="avocado"> Avocado<br>
+            <input type="checkbox" name="veggie" value="beans"> Beans<br>
+            <button type="submit" name="button-veggies">Submit your veggies!</button>
           </div>
-          <div class="radio">
-            <option type="radio" name="tortilla" value="tortilla">Bread</option>
-          </div>
-          <div class="radio">
-            <option type="radio" name="bread" value="bread">Bread</option>
-          </div>
-          <div class="radio">
-            <option type="radio" name="zoodles" value="zoodles">Zoodles</option>
-          </div>
-        </select>
+        </div>
       </div>
     </div>
 
-    <br>
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="form-group">
-          <h3><p>Choose your Proteins</p></h3>
-          <input type="checkbox" name="protein" value="chicken"> Chicken<br>
-          <input type="checkbox" name="protein" value="beef"> Beef<br>
-          <input type="checkbox" name="protein" value="fish"> Fish<br>
-          <input type="checkbox" name="protein" value="pork"> Pork<br>
-          <input type="checkbox" name="protein" value="tofu"> Tofu<br>
-        </div>
+        <!--Dairy Option-->
+        <div id="dairy">
+          <h4>
+            <img src="https://i.giphy.com/media/xDIXRIuUbgpsA/giphy.webp">
+            <p>Want to use cheese?</p></h4>
+          <select name="dairy-options" id="dairy-options">
+            <option value="cheese">Yes, I love cheese!</option>
+            <option value="nocheese">No cheese, please!</option>
+          </select></br>
+        <button type="submit" name="button-dairy">Submit your cheese!</button>
       </div>
-
-      <div class="col-md-4">
-        <div class="form-group">
-          <h3><p>Choose Veggies or Beans</p></h3>
-          <input type="checkbox" name="veggie" value="greens"> Greens<br>
-          <input type="checkbox" name="veggie" value="carrots"> Carrots<br>
-          <input type="checkbox" name="veggie" value="onions"> Onions<br>
-          <input type="checkbox" name="veggie" value="brocolli-asparagus"> Brocolli, asparagus, etc,<br>
-          <input type="checkbox" name="veggie" value="avocado"> Avocado<br>
-          <input type="checkbox" name="veggie" value="beans"> Beans<br>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group">
-          <h3><p>Want to use cheese?</p></h3>
-          <select class="form-control" id="meal-base">
-            <div class="radio">
-              <option type="radio" name="cheese" value="cheese">Yes, I love cheese!</option>
-            </div>
-            <div class="radio">
-              <option type="radio" name="cheese" value="cheese">No, cheese please!</option>
-            </div>
-          </div>
-        </div>
-
       </form>
+
+      <!--Recipe Results-->
       <div id="results">
         <div class="rice-results">
-          <p>For your next meal, you should make a rice dish with the following ingredients:<span id="protein"></span><span id="veggies"></span><span id="dairy"></span></p>
+          <p>For your next meal, you should make a rice dish:</p>
+          <span id="protein"></span>
+          <span id="veggies"></span>
+          <span id="dairy"></span>
+          <img src="" class="center">
         </div>
 
         <div class="pasta-results">
-          <p>For your next meal, you should make a pasta dish with the following ingredients:</span><span id="protein"></span><span id="veggies"></span><span id="dairy"></span></p>
+          <p>For your next meal, you should make a pasta dish:</p>
+          <span id="protein"></span>
+          <span id="veggies"></span>
+          <span id="dairy"></span>
+          <img src="" class="center">
         </div>
 
         <div class="bread-results">
-          <p>For your next meal, you should make a bread dish with the following ingredients:<span id="protein"></span><span id="veggies"></span><span id="dairy"></span></p>
-
+          <p>For your next meal, you should make a bread dish:</p>
+          <span id="protein"></span>
+          <span id="veggies"></span>
+          <span id="dairy"></span>
+          <img src="" class="center">
         </div>
+
         <div class="tortilla-results">
-          <p>For your next meal, you should make a tortilla dish with the following ingredients:<span id="protein"></span><span id="veggies"></span><span id="dairy"></span></p>
+          <p>For your next meal, you should make a tortilla dish:</p>
+          <span id="protein"></span>
+          <span id="veggies"></span>
+          <span id="dairy"></span>
+          <img src="" class="center">
         </div>
 
         <div class="zoodles-results">
-          <p>For your next meal, you should make a veggie noodle dish with the following ingredients:<span id="protein"></span><span id="veggies"></span><span id="dairy"></span></p>
+          <p>For your next meal, you should make a veggie noodle dish:</p>
+          <span id="protein"></span>
+          <span id="veggies"></span>
+          <span id="dairy"></span>
+          <img src="" class="center">
         </div>
       </div>
     </div>
