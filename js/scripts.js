@@ -147,7 +147,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userCheese = $("#cheese").val();
     $("#user-cheese").text(userCheese);
-    $("#diary-options").hide();
+    $("#cheese-options").hide();
 
     var userMeal = new Meal (userBase, userProtein, userVeggie, userCheese);
     var recipe = userMeal.Recipe();
