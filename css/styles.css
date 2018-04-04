@@ -1,16 +1,60 @@
-.jumbotron {
-  margin-bottom: 40px;
-  color: white;
-  background-color: red;
+body {
+  background-color: #f2edbf;
+  margin: 10px;
+  font-family: 'Bungee Shade', cursive;
   text-align: center;
 }
 
+h1 {
+  font-size: 8vw;
+  font-family: 'Bungee Shade', cursive;
+}
 
-body {
-  background-color: white;
-  color: red;
-  margin: 10px;
-  
-#results {
+h2 {
+  font-family: 'Slackey', cursive;
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 2vw;
+  text-align: center;
+  font-family: 'Delius Unicase', cursive;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: 'Slackey', cursive;
+  font-size: 3vw;
+}
+
+p {
+  font-family: 'Slackey', cursive;
+}
+
+span {
+  font-family: 'Delius Unicase', cursive;
+}
+
+.jumbotron {
+  margin-bottom: 40px;
+  background-image: url("https://i.giphy.com/media/3o7btUDtnx3gTwIlmo/giphy.webp");
+  text-align: center;
+}
+
+.center {
+  height: 270px;
+  width: 477px;
+}
+
+/* .rice-results, .pasta-results, .bread-results, .tortilla-results, .zoodles-results {
   display: none;
 }
+
+#next1 {
+  text-align: center;
+}
+
+#next2, #next3, #dairy {
+  display: none;
+  text-align: center;
+} */
