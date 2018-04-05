@@ -155,7 +155,7 @@ $(document).ready(function() {
           console.log(userMeal);
           var recipe = userMeal.Recipe();
           console.log(recipe);
-          $("#results").show();
+          $("#reset").show();
           debugger;
           if (recipe === "avocado ranch burrito") {
             $("#avocado-ranch-burrito").show();
