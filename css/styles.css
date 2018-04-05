@@ -46,6 +46,10 @@ span {
   width: 477px;
 }
 
+#protein-select, #veggie-select, #cheese-select {
+  display: none;
+}
+
 /* .rice-results, .pasta-results, .bread-results, .tortilla-results, .zoodles-results {
   display: none;
 }
