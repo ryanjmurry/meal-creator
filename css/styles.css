@@ -47,6 +47,7 @@ span {
 }
 
 
+
 .sidebar {
     width: 295px;
     position: fixed;
@@ -59,15 +60,11 @@ span {
     margin-top: 825px
 }
 
-/* .rice-results, .pasta-results, .bread-results, .tortilla-results, .zoodles-results {
+#protein-select, #veggie-select, #cheese-select {
+
   display: none;
 }
 
-#next1 {
-  text-align: center;
-}
-
-#next2, #next3, #dairy {
+#results{
   display: none;
-  text-align: center;
-} */
+}

@@ -24,106 +24,184 @@
   <br>
 
 <div class="main"> <!---This div separates main content from side bar.--->
-  <form class="order-form">
-        <div id="next1">
-          <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp">
-          <h4>Choose your Base</h4>
-            <select name="base-options" id="base-options">
-              <option value="rice">Rice</option>
-              <option value="pasta">Pasta or Noodles</option>
-              <option value="bread">Bread</option>
-              <option value="tortilla">Tortilla</option>
-              <option value="zoodles">Zoodles</option>
-            </div>
-          </select></br>
-          <button type="submit" name="button-base">Submit your base!</button>
-
-    <br>
+  <form id="base-select">
+    <div class="form-group">
+      <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp" alt="starch">
+      <h4>Choose Your Base:</h4>
+      <select id="base">
+        <option value="rice">Rice</option>
+        <option value="pasta">Pasta or Noodles</option>
+        <option value="bread">Bread</option>
+        <option value="tortilla">Tortilla</option>
+        <option value="zoodles">Zoodles</option>
+      </select>
+    </div>
+    <button type="submit" name="button-base">Submit your base!</button>
+  </form>
+  <br>
 
     <!--Protein-->
-      <div id="next2">
-        <div class="form-group" id="user-protein">
-          <h4>
-            <img src="https://i.giphy.com/media/fukS8yBmpvGGk/giphy.webp">
-            <p>Choose your Proteins</p></h4>
-          <input type="checkbox" name="protein" value="chicken"> Chicken<br>
-          <input type="checkbox" name="protein" value="beef"> Beef<br>
-          <input type="checkbox" name="protein" value="fish"> Fish<br>            <input type="checkbox" name="protein" value="pork"> Pork<br>
-          <input type="checkbox" name="protein" value="tofu"> Tofu<br>
-          <button type="submit" name="button-protein">Submit your protein!</button>
-          </div>
-        </div>
-
+    <form id="protein-select">
+      <div class="form-group">
+        <img src="https://i.giphy.com/media/fukS8yBmpvGGk/giphy.webp" alt="salt bae">
+        <h4>Choose your Proteins</h4>
+        <input type="checkbox" name="protein" value=" chicken"> Chicken<br>
+        <input type="checkbox" name="protein" value=" beef"> Beef<br>
+        <input type="checkbox" name="protein" value=" pork"> Pork<br>
+        <input type="checkbox" name="protein" value=" fish"> Fish<br>
+        <input type="checkbox" name="protein" value=" tofu"> Tofu<br>
+      </div>
+      <button type="submit" name="button-protein">Submit your protein!</button>
+    </form>
+    <br>
 
       <!--Veggies-->
-        <div id="next3">
-          <h4>
-            <img src="https://i.giphy.com/media/hKyroc5P7axuU/giphy.webp">
-            <p>Choose Veggies or Beans</p></h4>
-            <input type="checkbox" name="veggie" value="greens"> Greens<br>
-            <input type="checkbox" name="veggie" value="carrots"> Carrots<br>
-            <input type="checkbox" name="veggie" value="onions"> Onions<br>
-            <input type="checkbox" name="veggie" value="brocolli"> Brocolli<br>
-            <input type="checkbox" name="veggie" value="avocado"> Avocado<br>
-            <input type="checkbox" name="veggie" value="beans"> Beans<br>
-            <button type="submit" name="button-veggies">Submit your veggies!</button>
+      <form id="veggie-select">
+        <div class="form-group">
+          <img src="https://i.giphy.com/media/hKyroc5P7axuU/giphy.webp" alt="kevin office broccoli">
+          <h4>Choose Veggies or Beans</h4>
+          <input type="checkbox" name="veggie" value=" greens"> Greens<br>
+          <input type="checkbox" name="veggie" value=" carrots"> Carrots<br>
+          <input type="checkbox" name="veggie" value=" onions"> Onions<br>
+          <input type="checkbox" name="veggie" value=" brocolli"> Broccoli<br>
+          <input type="checkbox" name="veggie" value=" avocado"> Avocado<br>
+          <input type="checkbox" name="veggie" value=" beans"> Beans<br>
         </div>
-
-
-        <!--Dairy Option-->
-        <div id="dairy">
-          <h4>
-            <img src="https://i.giphy.com/media/xDIXRIuUbgpsA/giphy.webp">
-            <p>Want to use cheese?</p></h4>
-          <select name="dairy-options" id="dairy-options">
-            <option value="cheese">Yes, I love cheese!</option>
-            <option value="nocheese">No cheese, please!</option>
-          </select></br>
-        <button type="submit" name="button-dairy">Submit your cheese!</button>
-      </div>
+        <button type="submit" name="button-veggie">Submit your veggies!</button>
       </form>
+      <br>
+
+        <!--Cheese Option-->
+      <form id="cheese-select">
+        <div class="form-group">
+          <img src="https://i.giphy.com/media/xDIXRIuUbgpsA/giphy.webp" alt="cheese">
+          <h4>Want to use Cheese???</h4>
+          <select id="cheese">
+            <option value="yes">Yes, I love cheese!</option>
+            <option value="no">No cheese, please!</option>
+          </select>
+        </div>
+        <button type="submit" name="button-cheese">Submit your cheese!</button>
+      </form>
+      <br>
 
       <!--Recipe Results-->
       <div id="results">
-        <div class="rice-results">
-          <p>For your next meal, you should make a rice dish:</p>
-          <span id="protein"></span>
-          <span id="veggies"></span>
-          <span id="dairy"></span>
-          <img src="" class="center">
+        <div id="avocado-ranch-burrito">
+          <img class="img-fluid" src="img/avocado-ranch-burrito.jpg"></img>
+          <p>For your next meal, you should make an Avocado Ranch Burrito!</p>
         </div>
 
-        <div class="pasta-results">
-          <p>For your next meal, you should make a pasta dish:</p>
-          <span id="protein"></span>
-          <span id="veggies"></span>
-          <span id="dairy"></span>
-          <img src="" class="center">
+        <div id="burger">
+          <img class="img-fluid" src="img/burger.jpg"></img>
+          <p>For your next meal, you should make a Burger!</p>
         </div>
 
-        <div class="bread-results">
-          <p>For your next meal, you should make a bread dish:</p>
-          <span id="protein"></span>
-          <span id="veggies"></span>
-          <span id="dairy"></span>
-          <img src="" class="center">
+        <div id="burrito">
+          <img class="img-fluid" src="img/burrito.jpg"></img>
+          <p>For your next meal, you should make a Burrito!</p>
         </div>
 
-        <div class="tortilla-results">
-          <p>For your next meal, you should make a tortilla dish:</p>
-          <span id="protein"></span>
-          <span id="veggies"></span>
-          <span id="dairy"></span>
-          <img src="" class="center">
+        <div id="cheese-quesadilla">
+          <img class="img-fluid" src="img/cheese-quesadilla.jpg"></img>
+          <p>For your next meal, you should make a Cheese Quesadilla!</p>
         </div>
 
-        <div class="zoodles-results">
+        <div id="grilled-cheese">
+          <img class="img-fluid" src="img/grilled-cheese.jpg"></img>
+          <p>For your next meal, you should make some Grilled Cheese!</p>
+        </div>
+
+        <div class="grilled-protein">
+          <img class="img-fluid" src="img/grilled-protein.jpg"></img>
+          <p>For your next meal, Grill your Protein!</p>
+        </div>
+
+        <div id="grilled-veggies">
+          <img class="img-fluid" src="img/grilled-veggies.jpeg"></img>
+          <p>For your next meal, Grill your Veggies!</p>
+        </div>
+
+        <div id="meatballs">
+          <img class="img-fluid" src="img/meatballs.jpg"></img>
+          <p>For your next meal, you should make Meatballs!</p>
+        </div>
+
+        <div id="no-meal">
+          <img class="img-fluid" src="img/no-meal.jpg"></img>
+          <p>For your next meal, You're Not Eating! :(</p>
+        </div>
+
+        <div id="protein-and-veggies">
+          <img class="img-fluid" src="img/protein-and-veggies.jpg"></img>
+          <p>For your next meal, you should make Grilled Protein and Veggies!</p>
+        </div>
+
+        <div id="protein-pasta">
+          <img class="img-fluid" src="img/protein-pasta.jpeg"></img>
+          <p>For your next meal, you should make a Grilled Protein Noodle Dish!</p>
+        </div>
+
+        <div id="protein-quesadilla">
+          <img class="img-fluid" src="img/protein-quesadilla.jpg"></img>
+          <p>For your next meal, you should make a Meat Quesadilla</p>
+        </div>
+
+        <div id="protein-salad">
+          <img class="img-fluid" src="img/protein-salad.jpg"></img>
+          <p>For your next meal, you should make a Protein Salad!</p>
+        </div>
+
+        <div id="ramen">
+          <img class="img-fluid" src="img/ramen.jpg"></img>
+          <p>For your next meal, you should make Ramen!</p>
+        </div>
+
+        <div id="salad">
+          <img class="img-fluid" src="img/salad.jpg"></img>
+          <p>For your next meal, you should make a Salad!</p>
+        </div>
+
+        <div id="sushi">
+          <img class="img-fluid" src="img/sushi.jpg"></img>
+          <p>For your next meal, you should make Sushi!</p>
+        </div>
+
+        <div id="sushi-avocado">
+          <img class="img-fluid" src="img/sushi-avocado.jpg"></img>
+          <p>For your next meal, you should make Veggie Sushi!</p>
+        </div>
+
+        <div id="taco">
+          <img class="img-fluid" src="img/taco.jpg"></img>
           <p>For your next meal, you should make a veggie noodle dish:</p>
-          <span id="protein"></span>
-          <span id="veggies"></span>
-          <span id="dairy"></span>
-          <img src="" class="center">
         </div>
+
+        <div id="teriyaki-protein-bowl">
+          <img class="img-fluid" src="img/teriyaki-protein-bowl.jpg"></img>
+          <p>For your next meal, you should make Teriyaki Protein Bowl!</p>
+        </div>
+
+        <div id="teriyaki-veggie-bowl">
+          <img class="img-fluid" src="img/teriyaki-veggie-bowl.jpg"></img>
+          <p>For your next meal, you should Teriyaki Veggie Bowl!</p>
+        </div>
+
+        <div id="toast">
+          <img class="img-fluid" src="img/toast.jpg"></img>
+          <p>For your next meal, you should make Toast!</p>
+        </div>
+
+        <div id="veggie-pasta">
+          <img class="img-fluid" src="img/veggie-pasta.jpeg"></img>
+          <p>For your next meal, you should make a Veggie Pasta Dish!</p>
+        </div>
+
+        <div id="veggie-sandwich">
+          <img class="img-fluid" src="img/veggie-sandwich.jpg"></img>
+          <p>For your next meal, you should make a Veggie Sandwich!</p>
+        </div>
+
       </div>
 
     </div> <!--- this is the closing div for "main"--->
