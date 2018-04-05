@@ -46,7 +46,22 @@ span {
   width: 477px;
 }
 
+
+
+.sidebar {
+    width: 295px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 27px;
+    background: #fc9235;
+    overflow-x: hidden;
+    padding: 8px 8px;
+    margin-top: 825px
+}
+
 #protein-select, #veggie-select, #cheese-select {
+
   display: none;
 }
 
