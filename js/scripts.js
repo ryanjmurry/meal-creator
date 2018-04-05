@@ -42,7 +42,7 @@ Meal.prototype.Recipe = function() {
       if (mealVeggie.includes("carrots") === true || mealVeggie.includes("onions") === true || mealVeggie.includes("broccoli") === true || mealVeggie.includes("peppers") === true) {
         return "teriyaki veggie bowl"
       } else {
-        return "protein veggie bowl"
+        return "teriyaki protein bowl"
       }
     } else if (mealProtein.includes("fish") === true) {
       if (mealVeggie.includes("avocado") === true) {
