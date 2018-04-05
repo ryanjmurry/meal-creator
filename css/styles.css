@@ -46,6 +46,10 @@ span {
   width: 477px;
 }
 
-#results {
+#protein-select, #veggie-select, #cheese-select {
+  display: none;
+}
+
+#results{
   display: none;
 }
