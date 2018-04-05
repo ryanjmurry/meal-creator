@@ -49,15 +49,15 @@ span {
 
 
 .sidebar {
-    width: 295px;
+    width: 400px;
     position: fixed;
     z-index: 1;
     top: 20px;
-    left: 27px;
+    left: 80px;
     background: #fc9235;
     overflow-x: hidden;
     padding: 8px 8px;
-    margin-top: 825px
+    margin-top: 900px
 }
 
 #protein-select, #veggie-select, #cheese-select {
@@ -65,6 +65,10 @@ span {
   display: none;
 }
 
-#results{
+/*#results {
   display: none;
+}*/
+
+#avocado-ranch-burrito, #burger, #burrito, #cheese-quesadilla, #grilled-cheese, #grilled-protein, #grilled-veggies, #meatballs, #no-meal, #protein-and-veggies, #protein-pasta, #protein-quesadilla, #protein-salad, #ramen, #salad, #sushi-avocado, #sushi, #taco, #teriyaki-protein-bowl, #teriyaki-veggie-bowl, #toast, #veggie-pasta, #veggie-sandwich   {
+  display:none;
 }

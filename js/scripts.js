@@ -155,6 +155,55 @@ $(document).ready(function() {
           console.log(userMeal);
           var recipe = userMeal.Recipe();
           console.log(recipe);
+          $("#results").show();
+          debugger;
+          if (recipe === "avocado ranch burrito") {
+            $("#avocado-ranch-burrito").show();
+          } else if (recipe === "burger") {
+            $("#burger").show();
+          } else if (recipe === "burrito") {
+            $("#burrito").show();
+          } else if (recipe === "cheese quesadilla") {
+            $("#cheese-quesadilla").show();
+          } else if (recipe === "grilled cheese") {
+            $("#grilled-cheese").show();
+          } else if (recipe === "grilled protein") {
+            $("#grilled-protein").show();
+          } else if (recipe === "grilled veggies") {
+            $("#grilled-veggies").show();
+          } else if (recipe === "meatballs") {
+            $("#meatballs").show();
+          } else if (recipe === "no meal") {
+            $("#no-meal").show();
+          } else if (recipe === "protein and veggies") {
+            $("#protein-and-veggies").show();
+          } else if (recipe === "protein pasta") {
+            $("#protein-pasta").show();
+          } else if (recipe === "protein quesadilla") {
+            $("#protein-quesadilla").show();
+          } else if (recipe === "protein salad") {
+            $("#protein-salad").show();
+          } else if (recipe === "ramen") {
+            $("#ramen").show();
+          } else if (recipe === "salad") {
+            $("#salad").show();
+          } else if (recipe === "sushi avocado") {
+            $("#sushi-avocado").show();
+          } else if (recipe === "sushi") {
+            $("#sushi").show();
+          } else if (recipe === "taco") {
+            $("#taco").show();
+          } else if (recipe === "teriyaki protein bowl") {
+            $("#teriyaki-protein-bowl").show();
+          } else if (recipe === "teriyaki veggie bowl") {
+            $("#teriyaki-veggie-bowl").show();
+          } else if (recipe === "toast") {
+            $("#toast").show();
+          } else if (recipe === "veggie pasta") {
+            $("#veggie-pasta").show();
+          } else {
+            $("#veggie-sandwich").show();
+          }
         });
       });
     });
