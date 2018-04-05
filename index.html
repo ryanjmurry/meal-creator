@@ -23,6 +23,7 @@
 
   <br>
 
+<div class="main">
   <form class="order-form">
         <div id="next1">
           <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp">
@@ -36,9 +37,7 @@
             </div>
           </select></br>
           <button type="submit" name="button-base">Submit your base!</button>
-        </div>
-      </div>
-    </div>
+
     <br>
 
     <!--Protein-->
@@ -54,7 +53,7 @@
           <button type="submit" name="button-protein">Submit your protein!</button>
           </div>
         </div>
-      </div>
+
 
       <!--Veggies-->
         <div id="next3">
@@ -68,10 +67,8 @@
             <input type="checkbox" name="veggie" value="avocado"> Avocado<br>
             <input type="checkbox" name="veggie" value="beans"> Beans<br>
             <button type="submit" name="button-veggies">Submit your veggies!</button>
-          </div>
         </div>
-      </div>
-    </div>
+
 
         <!--Dairy Option-->
         <div id="dairy">
@@ -128,6 +125,17 @@
           <img src="" class="center">
         </div>
       </div>
+
+    </div> <! closing div for "main">
+
+    <div class="sidebar">
+      <h3>Ingredients</h3>
+      <p>Base: <span id="user-base"></span></p>
+      <p>Protein: <span id="user-protein"></span></p>
+      <p>Veggies: <span id="user-veggies"></span></p>
+      <p>Cheese: <span id="user-cheese"></span></p>
     </div>
+
+
   </body>
 </html>
