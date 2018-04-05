@@ -23,68 +23,66 @@
 
   <br>
 
-  <form class="order-form">
-        <div id="next1">
-          <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp">
-          <h4>Choose your Base</h4>
-            <select name="base-options" id="base-options">
-              <option value="rice">Rice</option>
-              <option value="pasta">Pasta or Noodles</option>
-              <option value="bread">Bread</option>
-              <option value="tortilla">Tortilla</option>
-              <option value="zoodles">Zoodles</option>
-            </div>
-          </select></br>
-          <button type="submit" name="button-base">Submit your base!</button>
-        </div>
-      </div>
+  <form id="base-select">
+    <div class="form-group">
+      <img src="https://i.giphy.com/media/3owypgpljxXcec90UU/giphy.webp" alt="starch">
+      <h4>Choose Your Base:</h4>
+      <select id="base">
+        <option value="rice">Rice</option>
+        <option value="pasta">Pasta or Noodles</option>
+        <option value="bread">Bread</option>
+        <option value="tortilla">Tortilla</option>
+        <option value="zoodles">Zoodles</option>
+      </select>
     </div>
-    <br>
+    <button type="submit" name="button-base">Submit your base!</button>
+  </form>
+  <br>
 
     <!--Protein-->
-      <div id="next2">
-        <div class="form-group" id="user-protein">
-          <h4>
-            <img src="https://i.giphy.com/media/fukS8yBmpvGGk/giphy.webp">
-            <p>Choose your Proteins</p></h4>
-          <input type="checkbox" name="protein" value="chicken"> Chicken<br>
-          <input type="checkbox" name="protein" value="beef"> Beef<br>
-          <input type="checkbox" name="protein" value="fish"> Fish<br>            <input type="checkbox" name="protein" value="pork"> Pork<br>
-          <input type="checkbox" name="protein" value="tofu"> Tofu<br>
-          <button type="submit" name="button-protein">Submit your protein!</button>
-          </div>
-        </div>
+    <form id="protein-select">
+      <div class="form-group">
+        <img src="https://i.giphy.com/media/fukS8yBmpvGGk/giphy.webp" alt="salt bae">
+        <h4>Choose your Proteins</h4>
+        <input type="checkbox" name="protein" value=" chicken"> Chicken<br>
+        <input type="checkbox" name="protein" value=" beef"> Beef<br>
+        <input type="checkbox" name="protein" value=" pork"> Pork<br>
+        <input type="checkbox" name="protein" value=" fish"> Fish<br>
+        <input type="checkbox" name="protein" value=" tofu"> Tofu<br>
       </div>
+      <button type="submit" name="button-protein">Submit your protein!</button>
+    </form>
+    <br>
 
       <!--Veggies-->
-        <div id="next3">
-          <h4>
-            <img src="https://i.giphy.com/media/hKyroc5P7axuU/giphy.webp">
-            <p>Choose Veggies or Beans</p></h4>
-            <input type="checkbox" name="veggie" value="greens"> Greens<br>
-            <input type="checkbox" name="veggie" value="carrots"> Carrots<br>
-            <input type="checkbox" name="veggie" value="onions"> Onions<br>
-            <input type="checkbox" name="veggie" value="brocolli"> Brocolli<br>
-            <input type="checkbox" name="veggie" value="avocado"> Avocado<br>
-            <input type="checkbox" name="veggie" value="beans"> Beans<br>
-            <button type="submit" name="button-veggies">Submit your veggies!</button>
-          </div>
+      <form id="veggie-select">
+        <div class="form-group">
+          <img src="https://i.giphy.com/media/hKyroc5P7axuU/giphy.webp" alt="kevin office broccoli">
+          <h4>Choose Veggies or Beans</h4>
+          <input type="checkbox" name="veggie" value=" greens"> Greens<br>
+          <input type="checkbox" name="veggie" value=" carrots"> Carrots<br>
+          <input type="checkbox" name="veggie" value=" onions"> Onions<br>
+          <input type="checkbox" name="veggie" value=" brocolli"> Broccoli<br>
+          <input type="checkbox" name="veggie" value=" avocado"> Avocado<br>
+          <input type="checkbox" name="veggie" value=" beans"> Beans<br>
         </div>
-      </div>
-    </div>
-
-        <!--Dairy Option-->
-        <div id="dairy">
-          <h4>
-            <img src="https://i.giphy.com/media/xDIXRIuUbgpsA/giphy.webp">
-            <p>Want to use cheese?</p></h4>
-          <select name="dairy-options" id="dairy-options">
-            <option value="cheese">Yes, I love cheese!</option>
-            <option value="nocheese">No cheese, please!</option>
-          </select></br>
-        <button type="submit" name="button-dairy">Submit your cheese!</button>
-      </div>
+        <button type="submit" name="button-veggie">Submit your veggies!</button>
       </form>
+      <br>
+
+        <!--Cheese Option-->
+      <form id="cheese-select">
+        <div class="form-group">
+          <img src="https://i.giphy.com/media/xDIXRIuUbgpsA/giphy.webp" alt="cheese">
+          <h4>Want to use Cheese???</h4>
+          <select id="cheese">
+            <option value="yes">Yes, I love cheese!</option>
+            <option value="no">No cheese, please!</option>
+          </select>
+        </div>
+        <button type="submit" name="button-cheese">Submit your cheese!</button>
+      </form>
+      <br>
 
       <!--Recipe Results-->
       <div id="results">
